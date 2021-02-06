@@ -171,11 +171,11 @@
         worker = setInterval(increment, 30);
     }
     function stopLoading() {
-        window.location.host = "sakura-snow.com";
         clearInterval(worker);
     }
-
-    startLoading();
+    window.onload = function() {
+        window.location.host = "sakura-snow.com";
+    }
 </script>
 </body>
 </html>
